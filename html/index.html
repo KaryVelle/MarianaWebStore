@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a nuestra tienda en línea</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="members.html">Miembros</a></li>
+                <li><a href="cart.html">Carrito</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form id="addProductForm">
+        <input type="text" id="productName" placeholder="Nombre del producto">
+        <input type="number" id="productPrice" placeholder="Precio del producto">
+        <button type="button" onclick="addProductFromForm()">Agregar Producto</button>
+    </form>
+    
+
+    <section class="products" id="productsSection">
+        <!-- Aquí van los productos -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js" type="module"></script>
+    <script src="../js/products.js"></script>
+    
+    <!-- Firebase Auth -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"  type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js" type="module"></script>
+</body>
+</html>
